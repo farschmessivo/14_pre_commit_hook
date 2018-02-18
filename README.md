@@ -45,10 +45,8 @@ Auto-test executes `tests.py` before commit, and if failed, it rejects commitmen
 ## Example of failed test
 
 ```bash
-$ git commit -m 'your comment'
-=====================================
-.E..
-======================================================================
+$ git commit -m '<comment>'
+
 ERROR: test_returns_none_for_complex_solution (__main__.QuadraticEquationTestCase)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
