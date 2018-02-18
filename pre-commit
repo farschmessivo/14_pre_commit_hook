@@ -1,0 +1,11 @@
+#!/bin/sh
+
+python3 tests.py
+
+exit_code=$?
+
+if [ $exit_code != 0 ]
+then
+    echo "Unit tests didn't pass. Commit rejected. $exit_code"
+    exit 1
+fi
